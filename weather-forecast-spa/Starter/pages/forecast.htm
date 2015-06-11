@@ -1,0 +1,11 @@
+<a href="#">
+    <h3>Back to search</h3>
+</a>
+
+<hr/>Days:<a href='#/forecast/2' ng-class="{ 'bg-primary': days == 2 }">2  </a> | <a href='#/forecast/5' ng-class="{ 'bg-primary': days == 5 }">5  </a> | <a href='#/forecast/7' ng-class="{ 'bg-primary': days == 7 }"> 7</a>
+<hr/>
+<div>
+    <div ng-repeat=" w in weatherResult.list ">
+        <temperature w='w' convert-to-date='convertToDate(p)' date-format='dd-MM-yyyy'></temperature>
+    </div>
+</div>
